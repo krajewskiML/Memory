@@ -46,14 +46,62 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Configure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configure.Designer.cs">
+      <DependentUpon>Configure.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Game.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game.Designer.cs">
+      <DependentUpon>Game.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pause.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pause.Designer.cs">
+      <DependentUpon>Pause.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WprowadzDane.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WprowadzDane.Designer.cs">
+      <DependentUpon>WprowadzDane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WprowadzReversed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WprowadzReversed.Designer.cs">
+      <DependentUpon>WprowadzReversed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WprowadzTrudnosc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WprowadzTrudnosc.Designer.cs">
+      <DependentUpon>WprowadzTrudnosc.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Configure.resx">
+      <DependentUpon>Configure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game.resx">
+      <DependentUpon>Game.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pause.resx">
+      <DependentUpon>Pause.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,7 +110,17 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="WprowadzDane.resx">
+      <DependentUpon>WprowadzDane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WprowadzReversed.resx">
+      <DependentUpon>WprowadzReversed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WprowadzTrudnosc.resx">
+      <DependentUpon>WprowadzTrudnosc.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -75,6 +133,158 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="caro-asercion\accordion.png" />
+    <Content Include="caro-asercion\anteater.png" />
+    <Content Include="caro-asercion\archaeopteryx-fossil.png" />
+    <Content Include="caro-asercion\astrolabe.png" />
+    <Content Include="caro-asercion\axolotl.png" />
+    <Content Include="caro-asercion\bassoon.png" />
+    <Content Include="caro-asercion\birch-trees.png" />
+    <Content Include="caro-asercion\blender.png" />
+    <Content Include="caro-asercion\boar.png" />
+    <Content Include="caro-asercion\boba.png" />
+    <Content Include="caro-asercion\bok-choy.png" />
+    <Content Include="caro-asercion\bowl-of-rice.png" />
+    <Content Include="caro-asercion\bunny-slippers.png" />
+    <Content Include="caro-asercion\bus-stop.png" />
+    <Content Include="caro-asercion\capybara.png" />
+    <Content Include="caro-asercion\charcuterie.png" />
+    <Content Include="caro-asercion\clarinet.png" />
+    <Content Include="caro-asercion\cloaked-figure-on-horseback.png" />
+    <Content Include="caro-asercion\clothesline.png" />
+    <Content Include="caro-asercion\coinflip.png" />
+    <Content Include="caro-asercion\cootie-catcher.png" />
+    <Content Include="caro-asercion\deer-head.png" />
+    <Content Include="caro-asercion\deer.png" />
+    <Content Include="caro-asercion\drum-kit.png" />
+    <Content Include="caro-asercion\dumpling-bao.png" />
+    <Content Include="caro-asercion\dumpling.png" />
+    <Content Include="caro-asercion\earbuds.png" />
+    <Content Include="caro-asercion\easel.png" />
+    <Content Include="caro-asercion\fox.png" />
+    <Content Include="caro-asercion\french-horn.png" />
+    <Content Include="caro-asercion\fridge.png" />
+    <Content Include="caro-asercion\froe-and-mallet.png" />
+    <Content Include="caro-asercion\grand-piano.png" />
+    <Content Include="caro-asercion\hedgehog.png" />
+    <Content Include="caro-asercion\heraldic-sun.png" />
+    <Content Include="caro-asercion\heron.png" />
+    <Content Include="caro-asercion\hyena-head.png" />
+    <Content Include="caro-asercion\mason-jar.png" />
+    <Content Include="caro-asercion\mountain-climbing.png" />
+    <Content Include="caro-asercion\pangolin.png" />
+    <Content Include="caro-asercion\paper-bag-crumpled.png" />
+    <Content Include="caro-asercion\paper-bag-folded.png" />
+    <Content Include="caro-asercion\paper-bag-open.png" />
+    <Content Include="caro-asercion\paper-crane.png" />
+    <Content Include="caro-asercion\paper-frog.png" />
+    <Content Include="caro-asercion\philosopher-bust.png" />
+    <Content Include="caro-asercion\pianist.png" />
+    <Content Include="caro-asercion\pipe-organ.png" />
+    <Content Include="caro-asercion\porcupine.png" />
+    <Content Include="caro-asercion\pressure-cooker.png" />
+    <Content Include="caro-asercion\rice-cooker.png" />
+    <Content Include="caro-asercion\rolling-suitcase.png" />
+    <Content Include="caro-asercion\rotary-phone.png" />
+    <Content Include="caro-asercion\saucepan.png" />
+    <Content Include="caro-asercion\sauropod-skeleton.png" />
+    <Content Include="caro-asercion\sewing-machine.png" />
+    <Content Include="caro-asercion\slot-machine.png" />
+    <Content Include="caro-asercion\sloth.png" />
+    <Content Include="caro-asercion\soldering-iron.png" />
+    <Content Include="caro-asercion\spinning-wheel.png" />
+    <Content Include="caro-asercion\stapler-heavy-duty.png" />
+    <Content Include="caro-asercion\stapler-pneumatic.png" />
+    <Content Include="caro-asercion\stapler.png" />
+    <Content Include="caro-asercion\steamroller.png" />
+    <Content Include="caro-asercion\toothbrush.png" />
+    <Content Include="caro-asercion\treehouse.png" />
+    <Content Include="caro-asercion\trombone.png" />
+    <Content Include="caro-asercion\tuba.png" />
+    <Content Include="caro-asercion\venus-flytrap.png" />
+    <Content Include="caro-asercion\vhs.png" />
+    <Content Include="caro-asercion\water-mill.png" />
+    <Content Include="caro-asercion\willow-tree.png" />
+    <Content Include="caro-asercion\windchimes.png" />
+    <Content Include="caro-asercion\wok.png" />
+    <None Include="Resources\white.png" />
+    <None Include="Resources\question.jpg" />
+    <None Include="Resources\wok.png" />
+    <None Include="Resources\windchimes.png" />
+    <None Include="Resources\willow-tree.png" />
+    <None Include="Resources\water-mill.png" />
+    <None Include="Resources\vhs.png" />
+    <None Include="Resources\venus-flytrap.png" />
+    <None Include="Resources\tuba.png" />
+    <None Include="Resources\trombone.png" />
+    <None Include="Resources\treehouse.png" />
+    <None Include="Resources\toothbrush.png" />
+    <None Include="Resources\steamroller.png" />
+    <None Include="Resources\stapler-pneumatic.png" />
+    <None Include="Resources\stapler-heavy-duty.png" />
+    <None Include="Resources\stapler.png" />
+    <None Include="Resources\spinning-wheel.png" />
+    <None Include="Resources\soldering-iron.png" />
+    <None Include="Resources\slot-machine.png" />
+    <None Include="Resources\sloth.png" />
+    <None Include="Resources\sewing-machine.png" />
+    <None Include="Resources\sauropod-skeleton.png" />
+    <None Include="Resources\saucepan.png" />
+    <None Include="Resources\rotary-phone.png" />
+    <None Include="Resources\rolling-suitcase.png" />
+    <None Include="Resources\rice-cooker.png" />
+    <None Include="Resources\pressure-cooker.png" />
+    <None Include="Resources\porcupine.png" />
+    <None Include="Resources\pipe-organ.png" />
+    <None Include="Resources\pianist.png" />
+    <None Include="Resources\philosopher-bust.png" />
+    <None Include="Resources\paper-frog.png" />
+    <None Include="Resources\paper-crane.png" />
+    <None Include="Resources\paper-bag-open.png" />
+    <None Include="Resources\paper-bag-folded.png" />
+    <None Include="Resources\paper-bag-crumpled.png" />
+    <None Include="Resources\pangolin.png" />
+    <None Include="Resources\mountain-climbing.png" />
+    <None Include="Resources\mason-jar.png" />
+    <None Include="Resources\hyena-head.png" />
+    <None Include="Resources\heron.png" />
+    <None Include="Resources\heraldic-sun.png" />
+    <None Include="Resources\hedgehog.png" />
+    <None Include="Resources\grand-piano.png" />
+    <None Include="Resources\froe-and-mallet.png" />
+    <None Include="Resources\fridge.png" />
+    <None Include="Resources\french-horn.png" />
+    <None Include="Resources\fox.png" />
+    <None Include="Resources\easel.png" />
+    <None Include="Resources\earbuds.png" />
+    <None Include="Resources\dumpling-bao.png" />
+    <None Include="Resources\dumpling.png" />
+    <None Include="Resources\drum-kit.png" />
+    <None Include="Resources\deer-head.png" />
+    <None Include="Resources\deer.png" />
+    <None Include="Resources\cootie-catcher.png" />
+    <None Include="Resources\coinflip.png" />
+    <None Include="Resources\clothesline.png" />
+    <None Include="Resources\cloaked-figure-on-horseback.png" />
+    <None Include="Resources\clarinet.png" />
+    <None Include="Resources\charcuterie.png" />
+    <None Include="Resources\capybara.png" />
+    <None Include="Resources\bus-stop.png" />
+    <None Include="Resources\bunny-slippers.png" />
+    <None Include="Resources\bowl-of-rice.png" />
+    <None Include="Resources\bok-choy.png" />
+    <None Include="Resources\boba.png" />
+    <None Include="Resources\boar.png" />
+    <None Include="Resources\blender.png" />
+    <None Include="Resources\birch-trees.png" />
+    <None Include="Resources\bassoon.png" />
+    <None Include="Resources\axolotl.png" />
+    <None Include="Resources\astrolabe.png" />
+    <None Include="Resources\archaeopteryx-fossil.png" />
+    <None Include="Resources\anteater.png" />
+    <None Include="Resources\accordion.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
