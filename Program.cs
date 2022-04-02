@@ -10,7 +10,7 @@ namespace Memory
     {
         //time to see the cards in seconds 
         public static int timeToSee = 10;
-        public static int timeToSeeReversed = 10;
+        public static int timeToSeeReversed = 3;
         public static int cardsX = 6;
         public static int cardsY = 8;
         public static int wrongCardPickedPunishment = 10;

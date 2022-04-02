@@ -33,8 +33,33 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CsvHelper, Version=27.0.0.0, Culture=neutral, PublicKeyToken=8c4959082be5c823, processorArchitecture=MSIL">
+      <HintPath>packages\CsvHelper.27.2.1\lib\net47\CsvHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.1.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.HashCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.HashCode.1.0.0\lib\net461\Microsoft.Bcl.HashCode.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.4.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.Memory, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.0\lib\netstandard2.0\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Tasks.Extensions.4.5.2\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -72,6 +97,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ranking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ranking.Designer.cs">
+      <DependentUpon>Ranking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Results.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Results.Designer.cs">
+      <DependentUpon>Results.cs</DependentUpon>
+    </Compile>
     <Compile Include="WprowadzDane.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +149,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Results.resx">
+      <DependentUpon>Results.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WprowadzDane.resx">
       <DependentUpon>WprowadzDane.cs</DependentUpon>
     </EmbeddedResource>
@@ -121,6 +161,7 @@
     <EmbeddedResource Include="WprowadzTrudnosc.resx">
       <DependentUpon>WprowadzTrudnosc.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -135,80 +176,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="caro-asercion\accordion.png" />
-    <Content Include="caro-asercion\anteater.png" />
-    <Content Include="caro-asercion\archaeopteryx-fossil.png" />
-    <Content Include="caro-asercion\astrolabe.png" />
-    <Content Include="caro-asercion\axolotl.png" />
-    <Content Include="caro-asercion\bassoon.png" />
-    <Content Include="caro-asercion\birch-trees.png" />
-    <Content Include="caro-asercion\blender.png" />
-    <Content Include="caro-asercion\boar.png" />
-    <Content Include="caro-asercion\boba.png" />
-    <Content Include="caro-asercion\bok-choy.png" />
-    <Content Include="caro-asercion\bowl-of-rice.png" />
-    <Content Include="caro-asercion\bunny-slippers.png" />
-    <Content Include="caro-asercion\bus-stop.png" />
-    <Content Include="caro-asercion\capybara.png" />
-    <Content Include="caro-asercion\charcuterie.png" />
-    <Content Include="caro-asercion\clarinet.png" />
-    <Content Include="caro-asercion\cloaked-figure-on-horseback.png" />
-    <Content Include="caro-asercion\clothesline.png" />
-    <Content Include="caro-asercion\coinflip.png" />
-    <Content Include="caro-asercion\cootie-catcher.png" />
-    <Content Include="caro-asercion\deer-head.png" />
-    <Content Include="caro-asercion\deer.png" />
-    <Content Include="caro-asercion\drum-kit.png" />
-    <Content Include="caro-asercion\dumpling-bao.png" />
-    <Content Include="caro-asercion\dumpling.png" />
-    <Content Include="caro-asercion\earbuds.png" />
-    <Content Include="caro-asercion\easel.png" />
-    <Content Include="caro-asercion\fox.png" />
-    <Content Include="caro-asercion\french-horn.png" />
-    <Content Include="caro-asercion\fridge.png" />
-    <Content Include="caro-asercion\froe-and-mallet.png" />
-    <Content Include="caro-asercion\grand-piano.png" />
-    <Content Include="caro-asercion\hedgehog.png" />
-    <Content Include="caro-asercion\heraldic-sun.png" />
-    <Content Include="caro-asercion\heron.png" />
-    <Content Include="caro-asercion\hyena-head.png" />
-    <Content Include="caro-asercion\mason-jar.png" />
-    <Content Include="caro-asercion\mountain-climbing.png" />
-    <Content Include="caro-asercion\pangolin.png" />
-    <Content Include="caro-asercion\paper-bag-crumpled.png" />
-    <Content Include="caro-asercion\paper-bag-folded.png" />
-    <Content Include="caro-asercion\paper-bag-open.png" />
-    <Content Include="caro-asercion\paper-crane.png" />
-    <Content Include="caro-asercion\paper-frog.png" />
-    <Content Include="caro-asercion\philosopher-bust.png" />
-    <Content Include="caro-asercion\pianist.png" />
-    <Content Include="caro-asercion\pipe-organ.png" />
-    <Content Include="caro-asercion\porcupine.png" />
-    <Content Include="caro-asercion\pressure-cooker.png" />
-    <Content Include="caro-asercion\rice-cooker.png" />
-    <Content Include="caro-asercion\rolling-suitcase.png" />
-    <Content Include="caro-asercion\rotary-phone.png" />
-    <Content Include="caro-asercion\saucepan.png" />
-    <Content Include="caro-asercion\sauropod-skeleton.png" />
-    <Content Include="caro-asercion\sewing-machine.png" />
-    <Content Include="caro-asercion\slot-machine.png" />
-    <Content Include="caro-asercion\sloth.png" />
-    <Content Include="caro-asercion\soldering-iron.png" />
-    <Content Include="caro-asercion\spinning-wheel.png" />
-    <Content Include="caro-asercion\stapler-heavy-duty.png" />
-    <Content Include="caro-asercion\stapler-pneumatic.png" />
-    <Content Include="caro-asercion\stapler.png" />
-    <Content Include="caro-asercion\steamroller.png" />
-    <Content Include="caro-asercion\toothbrush.png" />
-    <Content Include="caro-asercion\treehouse.png" />
-    <Content Include="caro-asercion\trombone.png" />
-    <Content Include="caro-asercion\tuba.png" />
-    <Content Include="caro-asercion\venus-flytrap.png" />
-    <Content Include="caro-asercion\vhs.png" />
-    <Content Include="caro-asercion\water-mill.png" />
-    <Content Include="caro-asercion\willow-tree.png" />
-    <Content Include="caro-asercion\windchimes.png" />
-    <Content Include="caro-asercion\wok.png" />
+    <None Include="10x12.csv" />
+    <None Include="6x8.csv" />
+    <None Include="7x12.csv" />
     <None Include="Resources\white.png" />
     <None Include="Resources\question.jpg" />
     <None Include="Resources\wok.png" />

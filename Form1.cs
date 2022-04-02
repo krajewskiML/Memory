@@ -54,15 +54,15 @@ namespace Memory
         private void button2_Click(object sender, EventArgs e)
         {
             bool areCredentialsSet = setCredentials();
-            if (!areCredentialsSet)
+            if (areCredentialsSet)
+            {
+                Configure configure = new Configure();
+                configure.ShowDialog();
+            }
+            else
             {
                 warning = new WprowadzDane();
                 warning.ShowDialog();
-            }
-            else
-            {   
-                Configure configure = new Configure();
-                configure.ShowDialog();
             }
         }
     }
