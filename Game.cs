@@ -59,7 +59,7 @@ namespace Memory
 
             foreach(DictionaryEntry entry in rs)
             {
-                if (entry.Value == Resources.white)
+                if ((String)entry.Key == "white" || (String)entry.Key == "question")
                 {
                     continue;
                 }
@@ -151,7 +151,7 @@ namespace Memory
             milis += 100;
             this.Text = "Memory, time: " + (milis/60000).ToString() + ((milis%60000)/1000).ToString() + ":" + (milis%1000).ToString();
             // if time of observing is passed then replace all tiles with question marks
-            if(milis/1000 == Program.timeToSee)
+            if(milis/1000 == Program.timeToSee && milis %1000 == 0)
             {
                 for (int x = 0; x < Program.cardsX; x++)
                 {
