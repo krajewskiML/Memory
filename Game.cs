@@ -149,7 +149,7 @@ namespace Memory
         private void Timer_Tick(object sender, EventArgs e)
         {
             milis += 100;
-            this.Text = "Memory, time: " + (milis/60000).ToString() + ((milis%60000)/1000).ToString() + ":" + (milis%1000).ToString();
+            this.Text = "Memory, time: " + (milis/60000).ToString() + ":" + ((milis%60000)/1000).ToString() + ":" + (milis%1000).ToString();
             // if time of observing is passed then replace all tiles with question marks
             if(milis/1000 == Program.timeToSee && milis %1000 == 0)
             {

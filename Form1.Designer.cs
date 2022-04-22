@@ -53,27 +53,30 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(31, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(26, 13);
+            this.label1.Size = new System.Drawing.Size(39, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = "Imię";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(31, 73);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 13);
+            this.label2.Size = new System.Drawing.Size(76, 20);
             this.label2.TabIndex = 3;
             this.label2.Text = "Nazwisko";
             // 
             // startGameButton
             // 
             this.startGameButton.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.startGameButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.startGameButton.Location = new System.Drawing.Point(123, 137);
             this.startGameButton.Name = "startGameButton";
-            this.startGameButton.Size = new System.Drawing.Size(114, 23);
+            this.startGameButton.Size = new System.Drawing.Size(114, 53);
             this.startGameButton.TabIndex = 4;
             this.startGameButton.Text = "Rozpocznij grę";
             this.startGameButton.UseVisualStyleBackColor = true;
@@ -82,9 +85,10 @@
             // button2
             // 
             this.button2.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(263, 137);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(118, 23);
+            this.button2.Size = new System.Drawing.Size(118, 53);
             this.button2.TabIndex = 5;
             this.button2.Text = "Konfiguruj ustawienia";
             this.button2.UseVisualStyleBackColor = true;
@@ -102,7 +106,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Memory";
-            this.Text = "Form1";
+            this.Text = "Memory";
             this.ResumeLayout(false);
             this.PerformLayout();
 

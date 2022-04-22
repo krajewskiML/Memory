@@ -42,9 +42,10 @@
             // CardsNumberLabel
             // 
             this.CardsNumberLabel.AutoSize = true;
-            this.CardsNumberLabel.Location = new System.Drawing.Point(16, 45);
+            this.CardsNumberLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CardsNumberLabel.Location = new System.Drawing.Point(3, 31);
             this.CardsNumberLabel.Name = "CardsNumberLabel";
-            this.CardsNumberLabel.Size = new System.Drawing.Size(119, 26);
+            this.CardsNumberLabel.Size = new System.Drawing.Size(152, 32);
             this.CardsNumberLabel.TabIndex = 1;
             this.CardsNumberLabel.Text = "Wybierz rozmiar planszy\r\n\r\n";
             this.CardsNumberLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -52,12 +53,13 @@
             // TimeToSeeLabel
             // 
             this.TimeToSeeLabel.AutoSize = true;
-            this.TimeToSeeLabel.Location = new System.Drawing.Point(16, 112);
+            this.TimeToSeeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TimeToSeeLabel.Location = new System.Drawing.Point(3, 101);
             this.TimeToSeeLabel.Name = "TimeToSeeLabel";
             this.TimeToSeeLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.TimeToSeeLabel.Size = new System.Drawing.Size(131, 39);
+            this.TimeToSeeLabel.Size = new System.Drawing.Size(139, 48);
             this.TimeToSeeLabel.TabIndex = 2;
-            this.TimeToSeeLabel.Text = "Czas na zapamiętanie kart\r\n(0 - 120 sekund)\r\n\r\n";
+            this.TimeToSeeLabel.Text = "Czas na zapamiętanie\r\nkart  (0 - 120 sekund)\r\n\r\n";
             this.TimeToSeeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ConfigureSettingButton
@@ -114,9 +116,10 @@
             // ReversedCardLabel
             // 
             this.ReversedCardLabel.AutoSize = true;
-            this.ReversedCardLabel.Location = new System.Drawing.Point(19, 193);
+            this.ReversedCardLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReversedCardLabel.Location = new System.Drawing.Point(3, 193);
             this.ReversedCardLabel.Name = "ReversedCardLabel";
-            this.ReversedCardLabel.Size = new System.Drawing.Size(89, 26);
+            this.ReversedCardLabel.Size = new System.Drawing.Size(112, 32);
             this.ReversedCardLabel.TabIndex = 8;
             this.ReversedCardLabel.Text = "Czas widzialności\r\nodwróconej karty";
             // 

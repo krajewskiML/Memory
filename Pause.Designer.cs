@@ -38,18 +38,20 @@
             // PauzaLabel
             // 
             this.PauzaLabel.AutoSize = true;
-            this.PauzaLabel.Location = new System.Drawing.Point(127, 9);
+            this.PauzaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PauzaLabel.Location = new System.Drawing.Point(105, 9);
             this.PauzaLabel.Name = "PauzaLabel";
-            this.PauzaLabel.Size = new System.Drawing.Size(112, 13);
+            this.PauzaLabel.Size = new System.Drawing.Size(168, 20);
             this.PauzaLabel.TabIndex = 1;
             this.PauzaLabel.Text = "Gra jest zapauzowana";
             // 
             // ReversedCardLabel
             // 
             this.ReversedCardLabel.AutoSize = true;
+            this.ReversedCardLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ReversedCardLabel.Location = new System.Drawing.Point(12, 84);
             this.ReversedCardLabel.Name = "ReversedCardLabel";
-            this.ReversedCardLabel.Size = new System.Drawing.Size(89, 26);
+            this.ReversedCardLabel.Size = new System.Drawing.Size(132, 40);
             this.ReversedCardLabel.TabIndex = 9;
             this.ReversedCardLabel.Text = "Czas widzialności\r\nodwróconej karty";
             // 

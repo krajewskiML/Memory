@@ -44,63 +44,70 @@
             // Miejsce_pierwsze
             // 
             this.Miejsce_pierwsze.AutoSize = true;
-            this.Miejsce_pierwsze.Location = new System.Drawing.Point(83, 78);
+            this.Miejsce_pierwsze.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Miejsce_pierwsze.Location = new System.Drawing.Point(86, 78);
             this.Miejsce_pierwsze.Name = "Miejsce_pierwsze";
-            this.Miejsce_pierwsze.Size = new System.Drawing.Size(16, 13);
+            this.Miejsce_pierwsze.Size = new System.Drawing.Size(25, 24);
             this.Miejsce_pierwsze.TabIndex = 0;
             this.Miejsce_pierwsze.Text = "1.";
             // 
             // miejsce_drugie
             // 
             this.miejsce_drugie.AutoSize = true;
-            this.miejsce_drugie.Location = new System.Drawing.Point(86, 147);
+            this.miejsce_drugie.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.miejsce_drugie.Location = new System.Drawing.Point(86, 139);
             this.miejsce_drugie.Name = "miejsce_drugie";
-            this.miejsce_drugie.Size = new System.Drawing.Size(16, 13);
+            this.miejsce_drugie.Size = new System.Drawing.Size(25, 24);
             this.miejsce_drugie.TabIndex = 1;
             this.miejsce_drugie.Text = "2.";
             // 
             // Miejsce_trzecie
             // 
             this.Miejsce_trzecie.AutoSize = true;
+            this.Miejsce_trzecie.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Miejsce_trzecie.Location = new System.Drawing.Point(86, 207);
             this.Miejsce_trzecie.Name = "Miejsce_trzecie";
-            this.Miejsce_trzecie.Size = new System.Drawing.Size(16, 13);
+            this.Miejsce_trzecie.Size = new System.Drawing.Size(25, 24);
             this.Miejsce_trzecie.TabIndex = 2;
             this.Miejsce_trzecie.Text = "3.";
             // 
             // pierwsze_imie
             // 
             this.pierwsze_imie.AutoSize = true;
+            this.pierwsze_imie.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pierwsze_imie.Location = new System.Drawing.Point(206, 78);
             this.pierwsze_imie.Name = "pierwsze_imie";
-            this.pierwsze_imie.Size = new System.Drawing.Size(35, 13);
+            this.pierwsze_imie.Size = new System.Drawing.Size(60, 24);
             this.pierwsze_imie.TabIndex = 3;
             this.pierwsze_imie.Text = "label4";
             // 
             // drugie_imie
             // 
             this.drugie_imie.AutoSize = true;
-            this.drugie_imie.Location = new System.Drawing.Point(206, 147);
+            this.drugie_imie.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.drugie_imie.Location = new System.Drawing.Point(206, 139);
             this.drugie_imie.Name = "drugie_imie";
-            this.drugie_imie.Size = new System.Drawing.Size(35, 13);
+            this.drugie_imie.Size = new System.Drawing.Size(60, 24);
             this.drugie_imie.TabIndex = 4;
             this.drugie_imie.Text = "label5";
             // 
             // trzecie_imie
             // 
             this.trzecie_imie.AutoSize = true;
+            this.trzecie_imie.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.trzecie_imie.Location = new System.Drawing.Point(206, 207);
             this.trzecie_imie.Name = "trzecie_imie";
-            this.trzecie_imie.Size = new System.Drawing.Size(35, 13);
+            this.trzecie_imie.Size = new System.Drawing.Size(60, 24);
             this.trzecie_imie.TabIndex = 5;
             this.trzecie_imie.Text = "label6";
             // 
             // pierwsze_score
             // 
             this.pierwsze_score.AutoSize = true;
+            this.pierwsze_score.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pierwsze_score.Location = new System.Drawing.Point(394, 78);
             this.pierwsze_score.Name = "pierwsze_score";
-            this.pierwsze_score.Size = new System.Drawing.Size(35, 13);
+            this.pierwsze_score.Size = new System.Drawing.Size(60, 24);
             this.pierwsze_score.TabIndex = 6;
             this.pierwsze_score.Text = "label7";
             // 
@@ -115,18 +122,20 @@
             // trzecie_score
             // 
             this.trzecie_score.AutoSize = true;
+            this.trzecie_score.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.trzecie_score.Location = new System.Drawing.Point(394, 207);
             this.trzecie_score.Name = "trzecie_score";
-            this.trzecie_score.Size = new System.Drawing.Size(35, 13);
+            this.trzecie_score.Size = new System.Drawing.Size(60, 24);
             this.trzecie_score.TabIndex = 8;
             this.trzecie_score.Text = "label9";
             // 
             // Najlepsi
             // 
             this.Najlepsi.AutoSize = true;
-            this.Najlepsi.Location = new System.Drawing.Point(167, 9);
+            this.Najlepsi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Najlepsi.Location = new System.Drawing.Point(85, 9);
             this.Najlepsi.Name = "Najlepsi";
-            this.Najlepsi.Size = new System.Drawing.Size(215, 13);
+            this.Najlepsi.Size = new System.Drawing.Size(381, 24);
             this.Najlepsi.TabIndex = 10;
             this.Najlepsi.Text = "3 najlepszch graczy dla wybranego trybu gry";
             // 

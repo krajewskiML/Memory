@@ -68,6 +68,7 @@ namespace Memory
             }
             indexUsed.Add(maxScoreIndex);
             drugie_imie.Text = names[maxScoreIndex] + " " + surnames[maxScoreIndex];
+            
             drugie_score.Text = scores[maxScoreIndex];
 
             maxScore = 0; maxScoreIndex = -1;
